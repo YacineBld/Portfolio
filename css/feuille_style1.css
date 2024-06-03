@@ -1,0 +1,616 @@
+ 
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+/*  @@@@@@@@@@@@@           Racine de la CSS                         @@@@@   */
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+
+
+/*   id="PageAccueilCelluleListeDroite"  */
+
+:root{
+	
+	--TaillePoliceText : 18px;  
+	
+	/*  --macouleurdefondbandeauettitre : rgb(132, 48, 180); */  /* Viollet */	
+	    #Bandeau-titre { 
+			background-image: url('images/fondN°1.png');
+            background-size: cover; /* Pour ajuster la taille de l'image au conteneur */
+            background-repeat: no-repeat;
+			text-align: center;
+			color: #ffffff;
+			padding: 20px;  /* jaune */
+	/*  --macouleurdefondbandeauettitre : rgb(132, 48, 180); */  /* Viollet */	
+	--macouleurdefondbandeauettitre : #18396b;  /* jaune */
+	/*	--macouleurdefondbandeauettitre : rgb(207, 58, 108);   */
+	
+	.CelluleTitrebandeau {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 10vh; /* 100% de la hauteur de la fenêtre */
+		margin: 0;
+	}/* Fond de page BLANC  */
+	/* --macouleurdefondpage : rgb(255, 255, 255);  */
+	
+	/* Fond de page GRIS MOYEN  */
+	--macouleurdefondcelluletext : rgb(255, 255, 255); 
+	
+	/* Fond de page GRIS FONCÉ  */
+	 --macouleurdefondpage : rgb(231, 231, 231); 
+	
+	--macouleurpolicetitre : rgb(0, 0, 0);  
+	/*	--macouleurpolicetitre : rgb(255, 255, 255);  */
+		--macouleurpolicetexte :  rgb(0, 0, 0);
+	}
+	
+	.footer-copyright {
+		color: rgb(2, 2, 2);
+		text-align: center;
+	}
+
+
+
+
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+/*  @@@@@@@@@@@@@  CORPS PAGE HTML, TITRES, LISTES ET PARAGRAPHES    @@@@@   */
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */ 
+
+body
+{
+
+/* fond uniforme */	
+	background-color: var( --macouleurdefondpage  ); 
+
+/* fond titre Qu'est ce que le BTS SIO ? */
+	.heading-style-1 {
+		font-size: 28px;
+		line-height: 34px;
+		font-weight: 700;
+		color: #354e0d;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+		padding-left: 25px;
+	}
+
+
+	.CelluleTitrebandeau {
+		font-size: 40px;
+		line-height: 34px;
+		font-weight: 700;
+		color: #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+		padding-left: 700px;
+		margin: 10px;
+        padding: 10px;
+	}
+
+	/* fond avec dégradé en diagonal */		
+background-image: radial-gradient(white, var(--macouleurdefondpage) ); 
+	font-size: 16px;
+	font-family: Arial;
+}
+
+
+#Bandeau-titre{
+	
+	color: var(--macouleurpolicetitre);
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial;	
+	margin: 10px; /* mettre bien dans l'angle en haut à gauche */
+	padding: 10px; /* mettre bien dans l'angle en haut à gauche */
+	background-color: var( --macouleurdefondbandeauettitre  );
+	border: 0px black solid;
+	box-shadow: 8px 8px 8px black;
+}
+
+
+
+
+
+h1
+{
+	color: var(--macouleurpolicetitre);
+	text-align: center;
+	font-size: 40px;
+	font-family: Arial;	
+	margin: 20px; /* mettre bien dans l'angle en haut à gauche */
+	padding: 20px; /* mettre bien dans l'angle en haut à gauche */
+	background-color: var( --macouleurdefondbandeauettitre  );
+	border: 0px black solid;
+	box-shadow: 8px 8px 8px black;
+
+}
+
+
+h2
+{
+	font-size: 20px;
+	font-family: Arial;
+}
+
+.ParagrapheTextePage{
+	font-size: var(--TaillePoliceText);
+	background-color: var( --macouleurdefondcelluletext  );
+	font-size: 30px;
+}
+
+
+
+.EnGrasParagrapheTextePage{
+	font-size: 11px;
+	font-weight: bold;
+	background-color: var( --macouleurdefondcelluletext  );
+}
+
+
+
+.LigneListe{
+	font-size: var(--TaillePoliceText);
+	padding-top : 10px; 
+	padding-bottom : 10px; 
+	vertical-align: top;
+	list-style-type: none;
+}
+
+.LigneListeEnGras{
+	font-size: var(--TaillePoliceText);
+	font-weight: bold;
+	padding-top : 28px; 
+	padding-bottom : 10px; 
+	vertical-align: top;
+	list-style-type: none;
+}
+
+/* Paramètres des compétences page d'accueil */
+
+/* Compétences en réseau */
+.h3-orange {
+    color: #D8532B; /* Orange foncé */
+    font-family: 'Arial', sans-serif; /* Police Arial ou sans-serif de secours */
+    font-size: 24px; /* Taille de police plus grande (ajustez selon vos besoins) */
+}
+
+/* Compétences en programmation */
+.h3-orange-programmation {
+    color: #D8532B; /* Orange foncé */
+    font-family: 'Arial', sans-serif; /* Police Arial ou sans-serif de secours */
+    font-size: 24px; /* Taille de police plus grande (ajustez selon vos besoins) */
+}
+
+/* Compétences en développement web */
+.h3-orange-web {
+    color: #D8532B; /* Orange foncé */
+    font-family: 'Arial', sans-serif; /* Police Arial ou sans-serif de secours */
+    font-size: 24px; /* Taille de police plus grande (ajustez selon vos besoins) */
+}
+
+/* Compétences en base de données */
+.h3-orange-database {
+    color: #D8532B; /* Orange foncé */
+    font-family: 'Arial', sans-serif; /* Police Arial ou sans-serif de secours */
+    font-size: 24px; /* Taille de police plus grande (ajustez selon vos besoins) */
+}
+
+/* Mes outils / logiciel */
+.h3-orange-tools {
+    color: #D8532B; /* Orange foncé */
+    font-family: 'Arial', sans-serif; /* Police Arial ou sans-serif de secours */
+    font-size: 24px; /* Taille de police plus grande (ajustez selon vos besoins) */
+}
+/* Pour le titre "Option SLAM - Solutions Logicielles et Applications Métiers :" */
+.h2-orange {
+	font-family: 'Arial', sans-serif; /* Police Arial ou sans-serif de secours */
+    font-size: 24px; /* Taille de police plus grande (ajustez selon vos besoins) */
+}
+
+/* Pour le titre "Option SISR - Solution d'Infrastructure Système et Réseau :" */
+.h2-orange {
+	font-family: 'Arial', sans-serif; /* Police Arial ou sans-serif de secours */
+    font-size: 24px; /* Taille de police plus grande (ajustez selon vos besoins) */
+}
+
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+/*  @@@@@@@@@@@@@          LES IMAGES                                 @@@@@   */
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */ 
+
+
+.imagecadresimple{
+padding: 10px;
+border : 1px solid #CCC;
+box-shadow: 0px 0px 17px #BBB;
+
+}
+
+
+.image-page-type1 {
+	display : block;   
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 8px 8px 8px var( --macouleurdefondbandeauettitre  );
+	}
+
+/*  @@@@@@@@  Accueil  @@@@@@@@@@@@@@@@@@   */
+
+#pageaccueilmaphoto{
+	/*	padding-top: 120px;  */
+		max-width: 150% ;
+		height: auto;
+		padding-bottom: 0px;
+	
+	}
+
+#pageaccueilimage1{
+		/*	padding-top: 20px;   */
+			max-width: 100% ;
+			height: auto;
+			padding-left: 50px;
+			padding-bottom: 0px;
+			
+		}  
+		
+#pageaccueilimage2{
+	/*	padding-top: 20px;   */
+		max-width: 10% ;
+		height: auto;
+		padding-left: 100px;
+		padding-bottom: 0px;
+	}  
+
+			
+#pageaccueilimage3{
+	/*	padding-top: 20px;   */
+		max-width: 100% ;
+		height: auto;
+		padding-left: 0px;
+		padding-bottom: 0px;
+	}  
+	h3 {
+		font-family: 'Quicksand';
+		font-size: 21px;
+		letter-spacing: 1px;
+		font-weight: 600;
+		line-height: 28px;
+		color: #000;
+	}
+/*  @@@@@@@@  Page2  @@@@@@@@@@@@@@@@@@   */
+
+#page2image1{
+	/*	padding-to+p: 20px;   */
+		max-width: 40% ;
+		height: auto;
+		padding-left: 100px;
+		padding-bottom: 0px;		
+	}  
+	
+#page2image2{
+/*	padding-top: 20px;   */
+	max-width: 50% ;
+	height: auto;
+	padding-left: 100px;
+	padding-bottom: 0px;
+}  
+
+		
+#page2image3{
+/*	padding-top: 20px;   */
+	max-width: 50% ;
+	height: auto;
+	padding-left: 0px;
+	padding-bottom: 0px;
+}  
+
+/*  @@@@@@@@  Page 3 @@@@@@@@@@@@@@@@@@   */
+
+#page3image1{
+	/*	padding-to+p: 20px;   */
+		max-width: 50% ;
+		height: auto;
+		padding-left: 100px;
+		padding-bottom: 0px;		
+	}  
+	
+#page3image2{
+/*	padding-top: 20px;   */
+	max-width: 90% ;
+	height: auto;
+	padding-left: 100px;
+	padding-bottom: 0px;
+}  
+
+		
+#page3image3{
+/*	padding-top: 20px;   */
+	max-width: 90% ;
+	height: auto;
+	padding-left: 0px;
+	padding-bottom: 0px;
+}  
+
+
+/*  @@@@@@@@  Page 4  @@@@@@@@@@@@@@@@@@   */
+
+/* Image de présentation */
+
+#ID {
+    width: 100%; /* La largeur de l'image prendra 100% de la largeur de son conteneur */
+    height: auto; /* La hauteur sera ajustée proportionnellement à la largeur pour éviter la distorsion */
+    object-fit: cover; /* L'image sera recadrée pour couvrir la totalité de la balise <img> */
+}
+
+/* Ajoutez ce style pour contrôler la taille du conteneur de l'image */
+#Bandeau-titre {
+    width: 100%; /* La largeur du conteneur prendra 100% de la largeur de son parent */
+	max-width: 800px; /* Par exemple, fixe la largeur maximale du conteneur */
+    margin: 0 auto; /* Centre le conteneur horizontalement sur la page */
+}
+#page4image1 {
+	/*	padding-to+p: 20px;   */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#page4image1 img {
+	    max-width: 30% ;
+		height: auto;
+		padding-left: 30px;
+		padding-bottom: 0px;		
+	}  
+	
+#page4image2 {
+		/*	padding-to+p: 20px;   */
+			display: flex;
+			justify-content: flex-start; /* alignement à gauche */
+			align-items: center;
+		}
+	
+	#page4image2 img {
+			max-width: 20% ;
+			height: auto;
+			padding-left: 30px;
+			padding-bottom: 0px;		
+		}  
+		
+#page4image3 {
+			/*	padding-to+p: 20px;   */
+				display: flex;
+				justify-content: flex-end; /* alignement à droite */
+				align-items: center;
+				padding-right: 0px; /* Ajoute une marge à droite pour l'image */
+			}
+			
+			#page4image3 img {
+				max-width: 30%;
+				height: auto;
+				padding-left: 30px; /* Ajoute de l'espace à gauche de l'image */
+    padding-bottom: 0px;
+}
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+/*  @@@@@@@@@@@@@          LES TABLEAUX - GLOBAL                     @@@@@   */
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */ 
+
+.colonneTitre{
+	column-width: 100px;
+}
+
+
+.CelluleAvecTexte{
+	font-size: var(--TaillePoliceText);
+	background-color: var( --macouleurdefondcelluletext  );
+	margin-left: 50px;
+}
+
+
+
+#AccueiltableauContenuPage{
+	border-collapse: collapse;
+	column-width: 200px;
+}
+
+#AccueiltableauContenuPage th{
+    font-weight: normal;
+}
+
+.TableauContenuPage  td, th{
+
+	/*  border : 1px solid black;   */
+	
+		padding: 10px 15px;
+	}
+
+#AccueiltableauContenuPage  td, th{
+
+		/*  border : 1px solid black;   */
+		
+			padding: 10px 15px;
+		}
+	
+		
+
+
+.CelluleTitrebandeau {
+	color: var(--macouleurpolicetitre);
+	font-size: 40px;
+	font-weight: bold;
+	text-align : center;
+}
+
+.tableau-mise-en-page {
+	width: 100%;
+/*	Pour faire des tests et voir les bordures du tableau */
+/*	border: solid 1px;   */
+
+}
+
+.tableau-mise-en-page td {
+/*	border: solid 1px;   */
+	vertical-align: top;
+}
+
+.tableau-mise-en-page-td-logo {
+/*	border: solid 4px;  */
+background-color:  var( --macouleurdefondbandeauettitre  );
+
+	vertical-align: text-top;
+	padding:5px;
+	box-shadow: 8px 8px 8px black;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Arial; 
+}
+
+
+.tableau-mise-en-page-td-message-titre {
+	background-color:  var( --macouleurdefondbandeauettitre  );
+	border-right: solid 4px;
+	width: 550px;
+	vertical-align: center;
+	align: center;
+	font-size: 20px;
+	font-family: Arial;
+	padding:20px;
+	box-shadow: 8px 8px 8px black;
+}
+
+	
+ 
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+/*  @@@@@@@@@@@@@          LES TABLEAUX - par page                   @@@@@   */
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */ 
+
+
+#PageAccueilC1{
+ width: 30%;  
+/*		width: 100px; */
+	}
+
+#PageAccueilC2{
+  width: 30%; 
+/*		width: 300px;  */
+}
+
+	
+
+ 
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+/*  @@@@@@@@@@@@@      Styles liés aux id - hors tableaux            @@@@@   */
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */ 
+
+#div-contenu{
+	margin:10px;
+	padding:10px;
+}
+
+
+#div-contenu-text{
+	margin:10px;
+	padding:10px;
+}
+
+
+
+#PageAccueilC3{
+	align-content: center;
+	}
+	
+
+#PageAccueilC6legendeC3{
+	align-content: center;
+	}
+		
+				
+
+#PageAccueilCelluleListeDroite{
+	background-color:var( --macouleurdefondcelluletext );
+	}
+				
+					
+
+#PageAccueilCelluleTexteAccueil{
+		background-color:var( --macouleurdefondcelluletext );
+		}
+					
+						
+			
+#PageContactC1{
+padding-left: 40px;
+background-color:var( --macouleurdefondcelluletext );
+
+	}
+	
+
+#PageAccueilC1{
+		padding-left: 40px;
+		background-color:var( --macouleurdefondcelluletext );
+		
+			}
+ 
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+/*  @@@@@@@@@@@@@          LES MENUS                                 @@@@@   */
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */ 
+
+
+
+.menu{
+	list-style-type: none; /* pour enlever les points */
+	margin: 0; /* mettre bien dans l'angle en haut à gauche */
+	padding: 0; /* mettre bien dans l'angle en haut à gauche */
+	overflow: hidden;
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	width: 100%; 	
+}
+	
+.menu li {
+   float: left; /* c'est pour mettre à l'horizontal*/
+   font-size: 20px;
+   font-weight: bold;
+	}
+	
+.menu li a {
+	display: block;  
+	color:var(--macouleurpolicetitre);
+	text-align: center; 
+	padding: 14px 16px;   
+	text-decoration: none;	
+	}
+	
+	/* hover :permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur, sans nécessairement l'activer.*/
+.menu li a:hover {
+	background-color: #ebf5ff;
+	color : black;
+
+	}
+	
+	/* active ici est un class(voir html)*/
+	
+	.active {
+	background-color: rgb(165, 187, 86);
+	}
+	
+
+ 
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */
+/*  @@@@@@@@@@@@@         Tests tableaaux                              @@@@@   */
+/*  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   */ 
+
+
+
+td {
+	border: solid 0px;
+}
+tr {
+	border: solid 0px;
+}
+
+.footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #18396b;
+}
